@@ -47,6 +47,7 @@ module ctrl(Op, Funct, Zero,
    wire i_sw   =  Op[5]&~Op[4]& Op[3]&~Op[2]& Op[1]& Op[0]; // sw
    wire i_beq  = ~Op[5]&~Op[4]&~Op[3]& Op[2]&~Op[1]&~Op[0]; // beq
    wire i_bne  = ~Op[5]&~Op[4]&~Op[3]& Op[2]&~Op[1]& Op[0]; //bne 000101
+   wire i_slti = ~Op[5]&~Op[4]& Op[3]&~Op[2]& Op[1]&~Op[0]; //slti 001010
    
   // j format
    wire i_j    = ~Op[5]&~Op[4]&~Op[3]&~Op[2]& Op[1]&~Op[0];  // j
@@ -54,10 +55,10 @@ module ctrl(Op, Funct, Zero,
   
 
   // generate control signals
-  assign RegWrite   = rtype | i_lw | i_addi | i_ori | i_jal | i_jalr ; // register write
+  assign RegWrite   = rtype | i_lw | i_addi | i_ori | i_jal | i_jalr | i_slti; // register write
   
   assign MemWrite   = i_sw;                           // memory write
-  assign ALUSrc     = i_lw | i_sw | i_addi | i_ori;   // ALU A is from instruction immediate
+  assign ALUSrc     = i_lw | i_sw | i_addi | i_ori | i_slti;   // ALU B is from instruction immediate
   assign ARegSel    = i_sll | i_srl | i_sra;
   assign EXTOp      = i_addi | i_lw | i_sw;           // signed extension
 
@@ -94,9 +95,9 @@ module ctrl(Op, Funct, Zero,
 //`define ALU_SLLV  4'b1011
 //`define ALU_SRLV  4'b1100
 
-  assign ALUOp[0] = i_add | i_lw | i_sw | i_addi | i_and | i_slt | i_addu | i_nor | i_srl | i_sllv;
+  assign ALUOp[0] = i_add | i_lw | i_sw | i_addi | i_and | i_slt | i_addu | i_nor | i_srl | i_sllv |i_slti;
   assign ALUOp[1] = i_sub | i_beq | i_and | i_sltu | i_subu | i_bne | i_nor | i_sra | i_sllv;
-  assign ALUOp[2] = i_or | i_ori | i_slt | i_sltu | i_nor | i_srlv;
+  assign ALUOp[2] = i_or | i_ori | i_slt | i_sltu | i_nor | i_srlv | i_slti;
   assign ALUOp[3] = i_sll | i_sra | i_srl | i_sllv | i_srlv;
 
 endmodule

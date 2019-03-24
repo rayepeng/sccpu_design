@@ -17,7 +17,261 @@
 # 13 compiles, 0 failed with no errors.
 vsim -gui work.sccomp_tb
 # vsim -gui work.sccomp_tb 
-# Start time: 09:25:20 on Mar 24,2019
+# Start time: 09:42:25 on Mar 24,2019
+# Loading work.sccomp_tb
+# Loading work.sccomp
+# Loading work.sccpu
+# Loading work.ctrl
+# Loading work.PC
+# Loading work.NPC
+# Loading work.RF
+# Loading work.mux4
+# Loading work.EXT
+# Loading work.mux2
+# Loading work.alu
+# Loading work.dm
+# Loading work.im
+# ** Error: (vsim-3701) D:/CoDWork/SCPUSIM/sccomp_tb.v(52): 'hi' is not a field or method in 'rf'.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb File: D:/CoDWork/SCPUSIM/sccomp_tb.v
+# ** Error: (vsim-3701) D:/CoDWork/SCPUSIM/sccomp_tb.v(52): 'lo' is not a field or method in 'rf'.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb File: D:/CoDWork/SCPUSIM/sccomp_tb.v
+# Error loading design
+# End time: 09:42:25 on Mar 24,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vsim -gui work.sccomp_tb
+# vsim -gui work.sccomp_tb 
+# Start time: 09:42:41 on Mar 24,2019
+# Loading work.sccomp_tb
+# Loading work.sccomp
+# Loading work.sccpu
+# Loading work.ctrl
+# Loading work.PC
+# Loading work.NPC
+# Loading work.RF
+# Loading work.mux4
+# Loading work.EXT
+# Loading work.mux2
+# Loading work.alu
+# Loading work.dm
+# Loading work.im
+# ** Error: (vsim-3701) D:/CoDWork/SCPUSIM/sccomp_tb.v(52): 'hi' is not a field or method in 'rf'.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb File: D:/CoDWork/SCPUSIM/sccomp_tb.v
+# ** Error: (vsim-3701) D:/CoDWork/SCPUSIM/sccomp_tb.v(52): 'lo' is not a field or method in 'rf'.
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb File: D:/CoDWork/SCPUSIM/sccomp_tb.v
+# Error loading design
+# End time: 09:42:42 on Mar 24,2019, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# Compile of alu.v was successful.
+# Compile of ctrl.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of EXT.v was successful.
+# Compile of mux.v was successful.
+# Compile of NPC.v was successful.
+# Compile of PC.v was successful.
+# Compile of RF.v was successful.
+# Compile of sccpu.v was successful.
+# Compile of dm.v was successful.
+# Compile of im.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.sccomp_tb
+# vsim -gui work.sccomp_tb 
+# Start time: 09:43:23 on Mar 24,2019
+# Loading work.sccomp_tb
+# Loading work.sccomp
+# Loading work.sccpu
+# Loading work.ctrl
+# Loading work.PC
+# Loading work.NPC
+# Loading work.RF
+# Loading work.mux4
+# Loading work.EXT
+# Loading work.mux2
+# Loading work.alu
+# Loading work.dm
+# Loading work.im
+add wave -position insertpoint  \
+sim:/sccomp_tb/clk \
+sim:/sccomp_tb/rstn \
+sim:/sccomp_tb/reg_sel \
+sim:/sccomp_tb/reg_data \
+sim:/sccomp_tb/foutput \
+sim:/sccomp_tb/counter
+# Load canceled
+run 2500
+# ** Warning: (vsim-7) Failed to open readmem file "bne_test" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/CoDWork/SCPUSIM/sccomp_tb.v(18)
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb
+# PC = 0xxxxxxxxx, instr = 0xxxxxxxxx
+# PC = 0x00000000, instr = 0xxxxxxxxx
+# pc: 00000000
+# instr: xxxxxxxx
+# PC = 0x00000004, instr = 0xxxxxxxxx
+# pc: 00000004
+# instr: xxxxxxxx
+# PC = 0x00000008, instr = 0xxxxxxxxx
+# pc: 00000008
+# instr: xxxxxxxx
+# PC = 0x0000000c, instr = 0xxxxxxxxx
+# pc: 0000000c
+# instr: xxxxxxxx
+# PC = 0x00000010, instr = 0xxxxxxxxx
+# pc: 00000010
+# instr: xxxxxxxx
+# PC = 0x00000014, instr = 0xxxxxxxxx
+# pc: 00000014
+# instr: xxxxxxxx
+# PC = 0x00000018, instr = 0xxxxxxxxx
+# pc: 00000018
+# instr: xxxxxxxx
+# PC = 0x0000001c, instr = 0xxxxxxxxx
+# pc: 0000001c
+# instr: xxxxxxxx
+# PC = 0x00000020, instr = 0xxxxxxxxx
+# pc: 00000020
+# instr: xxxxxxxx
+# PC = 0x00000024, instr = 0xxxxxxxxx
+# pc: 00000024
+# instr: xxxxxxxx
+# PC = 0x00000028, instr = 0xxxxxxxxx
+# pc: 00000028
+# instr: xxxxxxxx
+# PC = 0x0000002c, instr = 0xxxxxxxxx
+# pc: 0000002c
+# instr: xxxxxxxx
+# PC = 0x00000030, instr = 0xxxxxxxxx
+# pc: 00000030
+# instr: xxxxxxxx
+# PC = 0x00000034, instr = 0xxxxxxxxx
+# pc: 00000034
+# instr: xxxxxxxx
+# PC = 0x00000038, instr = 0xxxxxxxxx
+# pc: 00000038
+# instr: xxxxxxxx
+# PC = 0x0000003c, instr = 0xxxxxxxxx
+# pc: 0000003c
+# instr: xxxxxxxx
+# PC = 0x00000040, instr = 0xxxxxxxxx
+# pc: 00000040
+# instr: xxxxxxxx
+# PC = 0x00000044, instr = 0xxxxxxxxx
+# pc: 00000044
+# instr: xxxxxxxx
+# PC = 0x00000048, instr = 0xxxxxxxxx
+# ** Note: $stop    : D:/CoDWork/SCPUSIM/sccomp_tb.v(54)
+#    Time: 1900 ns  Iteration: 0  Instance: /sccomp_tb
+# Break in Module sccomp_tb at D:/CoDWork/SCPUSIM/sccomp_tb.v line 54
+quit -sim
+# End time: 09:44:32 on Mar 24,2019, Elapsed time: 0:01:09
+# Errors: 1, Warnings: 1
+# Compile of alu.v was successful.
+# Compile of ctrl.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of EXT.v was successful.
+# Compile of mux.v was successful.
+# Compile of NPC.v was successful.
+# Compile of PC.v was successful.
+# Compile of RF.v was successful.
+# Compile of sccpu.v was successful.
+# Compile of dm.v was successful.
+# Compile of im.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.sccomp_tb
+# vsim -gui work.sccomp_tb 
+# Start time: 09:44:46 on Mar 24,2019
+# Loading work.sccomp_tb
+# Loading work.sccomp
+# Loading work.sccpu
+# Loading work.ctrl
+# Loading work.PC
+# Loading work.NPC
+# Loading work.RF
+# Loading work.mux4
+# Loading work.EXT
+# Loading work.mux2
+# Loading work.alu
+# Loading work.dm
+# Loading work.im
+run 2500
+# ** Warning: (vsim-7) Failed to open readmem file "bne_test" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/CoDWork/SCPUSIM/sccomp_tb.v(18)
+#    Time: 0 ns  Iteration: 0  Instance: /sccomp_tb
+# pc: 00000000
+# instr: xxxxxxxx
+# pc: 00000004
+# instr: xxxxxxxx
+# pc: 00000008
+# instr: xxxxxxxx
+# pc: 0000000c
+# instr: xxxxxxxx
+# pc: 00000010
+# instr: xxxxxxxx
+# pc: 00000014
+# instr: xxxxxxxx
+# pc: 00000018
+# instr: xxxxxxxx
+# pc: 0000001c
+# instr: xxxxxxxx
+# pc: 00000020
+# instr: xxxxxxxx
+# pc: 00000024
+# instr: xxxxxxxx
+# pc: 00000028
+# instr: xxxxxxxx
+# pc: 0000002c
+# instr: xxxxxxxx
+# pc: 00000030
+# instr: xxxxxxxx
+# pc: 00000034
+# instr: xxxxxxxx
+# pc: 00000038
+# instr: xxxxxxxx
+# pc: 0000003c
+# instr: xxxxxxxx
+# pc: 00000040
+# instr: xxxxxxxx
+# pc: 00000044
+# instr: xxxxxxxx
+# ** Note: $stop    : D:/CoDWork/SCPUSIM/sccomp_tb.v(54)
+#    Time: 1900 ns  Iteration: 0  Instance: /sccomp_tb
+# Break in Module sccomp_tb at D:/CoDWork/SCPUSIM/sccomp_tb.v line 54
+quit -sim
+# End time: 09:45:25 on Mar 24,2019, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 1
+# Compile of alu.v was successful.
+# Compile of ctrl.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of EXT.v was successful.
+# Compile of mux.v was successful.
+# Compile of alu.v was successful with warnings.
+# Compile of ctrl.v was successful.
+# Compile of ctrl_encode_def.v was successful.
+# Compile of EXT.v was successful.
+# Compile of mux.v was successful.
+# Compile of NPC.v was successful.
+# Compile of PC.v was successful.
+# Compile of RF.v was successful.
+# Compile of sccpu.v was successful.
+# Compile of dm.v was successful.
+# Compile of im.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# 13 compiles, 0 failed with no errors.
+# Compile of NPC.v was successful.
+# Compile of PC.v was successful.
+# Compile of RF.v was successful.
+# Compile of sccpu.v was successful.
+# Compile of dm.v was successful.
+# Compile of im.v was successful.
+# Compile of sccomp.v was successful.
+# Compile of sccomp_tb.v was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.sccomp_tb
+# vsim -gui work.sccomp_tb 
+# Start time: 09:45:41 on Mar 24,2019
 # Loading work.sccomp_tb
 # Loading work.sccomp
 # Loading work.sccpu
@@ -41,49 +295,51 @@ sim:/sccomp_tb/counter
 run 2500
 # pc: 00000000
 # instr: 20020005
+# r[00-07]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[08-15]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[16-23]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[24-31]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
 # r[ 2] = 0x00000005,
 # pc: 00000004
 # instr: 2003000c
+# r[00-07]=0x00000000, 0x00000000, 0x00000005, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[08-15]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[16-23]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[24-31]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
 # r[ 3] = 0x0000000c,
 # pc: 00000008
 # instr: 2067fff7
+# r[00-07]=0x00000000, 0x00000000, 0x00000005, 0x0000000c, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[08-15]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[16-23]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[24-31]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
 # r[ 7] = 0x00000003,
 # pc: 0000000c
 # instr: 00e22025
+# r[00-07]=0x00000000, 0x00000000, 0x00000005, 0x0000000c, 0x00000000, 0x00000000, 0x00000000, 0x00000003
+# r[08-15]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[16-23]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[24-31]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
 # r[ 4] = 0x00000007,
 # pc: 00000010
 # instr: 00642824
+# r[00-07]=0x00000000, 0x00000000, 0x00000005, 0x0000000c, 0x00000007, 0x00000000, 0x00000000, 0x00000003
+# r[08-15]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[16-23]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[24-31]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
 # r[ 5] = 0x00000004,
 # pc: 00000014
 # instr: 00a42820
+# r[00-07]=0x00000000, 0x00000000, 0x00000005, 0x0000000c, 0x00000007, 0x00000004, 0x00000000, 0x00000003
+# r[08-15]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[16-23]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
+# r[24-31]=0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000
 # r[ 5] = 0x0000000b,
 # pc: 00000018
-# instr: 10a7000a
-# pc: 0000001c
-# instr: 0064202a
-# r[ 4] = 0x00000000,
-# pc: 00000020
-# instr: 10800001
-# pc: 00000028
-# instr: 00e2202a
-# r[ 4] = 0x00000001,
-# pc: 0000002c
-# instr: 00853820
-# r[ 7] = 0x0000000c,
-# pc: 00000030
-# instr: 00e23822
-# r[ 7] = 0x00000007,
-# pc: 00000034
-# instr: ac670044
-# dmem[0x00000050] = 0x00000007,
-# pc: 00000038
-# instr: 8c020050
-# r[ 2] = 0x00000007,
-# pc: 0000003c
-# instr: 08000011
+# instr: 14a7000a
 # pc: 00000044
 # instr: ac020054
-# dmem[0x00000054] = 0x00000007,
+# dmem[0x00000054] = 0x00000005,
 # ** Note: $stop    : D:/CoDWork/SCPUSIM/sccomp_tb.v(54)
-#    Time: 1700 ns  Iteration: 0  Instance: /sccomp_tb
+#    Time: 900 ns  Iteration: 0  Instance: /sccomp_tb
 # Break in Module sccomp_tb at D:/CoDWork/SCPUSIM/sccomp_tb.v line 54

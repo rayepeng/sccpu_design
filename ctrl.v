@@ -38,7 +38,7 @@ module ctrl(Op, Funct, Zero,
    wire i_lw   =  Op[5]&~Op[4]&~Op[3]&~Op[2]& Op[1]& Op[0]; // lw
    wire i_sw   =  Op[5]&~Op[4]& Op[3]&~Op[2]& Op[1]& Op[0]; // sw
    wire i_beq  = ~Op[5]&~Op[4]&~Op[3]& Op[2]&~Op[1]&~Op[0]; // beq
-
+   wire i_bne  = ~Op[5]&~Op[4]&~Op[3]& Op[2]&~Op[1]& Op[0]; //bne 000101
   // j format
    wire i_j    = ~Op[5]&~Op[4]&~Op[3]&~Op[2]& Op[1]&~Op[0];  // j
    wire i_jal  = ~Op[5]&~Op[4]&~Op[3]&~Op[2]& Op[1]& Op[0];  // jal
@@ -65,7 +65,7 @@ module ctrl(Op, Funct, Zero,
   // NPC_PLUS4   2'b00
   // NPC_BRANCH  2'b01
   // NPC_JUMP    2'b10
-  assign NPCOp[0] = i_beq & Zero;
+  assign NPCOp[0] = (i_beq & Zero) | (i_bne & ~Zero) ;
   assign NPCOp[1] = i_j | i_jal;
   
   // ALU_NOP   3'b000
@@ -77,7 +77,7 @@ module ctrl(Op, Funct, Zero,
   // ALU_SLTU  3'b110
   
   assign ALUOp[0] = i_add | i_lw | i_sw | i_addi | i_and | i_slt | i_addu;
-  assign ALUOp[1] = i_sub | i_beq | i_and | i_sltu | i_subu;
+  assign ALUOp[1] = i_sub | i_beq | i_and | i_sltu | i_subu | i_bne;
   assign ALUOp[2] = i_or | i_ori | i_slt | i_sltu;
 
 endmodule

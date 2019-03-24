@@ -1,3 +1,6 @@
+# Reading E:/ProgramFiles/modelsim1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile D:/CoDWork/SCPUSIM/SCPUSIM.mpf
+# Loading project SCPUSIM
 # Compile of alu.v was successful.
 # Compile of ctrl.v was successful.
 # Compile of ctrl_encode_def.v was successful.
@@ -14,7 +17,7 @@
 # 13 compiles, 0 failed with no errors.
 vsim -gui work.sccomp_tb
 # vsim -gui work.sccomp_tb 
-# Start time: 15:13:54 on Mar 23,2019
+# Start time: 09:25:20 on Mar 24,2019
 # Loading work.sccomp_tb
 # Loading work.sccomp
 # Loading work.sccpu
@@ -29,12 +32,13 @@ vsim -gui work.sccomp_tb
 # Loading work.dm
 # Loading work.im
 add wave -position insertpoint  \
-sim:/sccomp_tb/U_SCCOMP/instr \
-sim:/sccomp_tb/U_SCCOMP/PC \
-sim:/sccomp_tb/U_SCCOMP/MemWrite \
-sim:/sccomp_tb/U_SCCOMP/dm_addr \
-sim:/sccomp_tb/U_SCCOMP/dm_din
-run -all
+sim:/sccomp_tb/clk \
+sim:/sccomp_tb/rstn \
+sim:/sccomp_tb/reg_sel \
+sim:/sccomp_tb/reg_data \
+sim:/sccomp_tb/foutput \
+sim:/sccomp_tb/counter
+run 2500
 # pc: 00000000
 # instr: 20020005
 # r[ 2] = 0x00000005,
@@ -83,6 +87,3 @@ run -all
 # ** Note: $stop    : D:/CoDWork/SCPUSIM/sccomp_tb.v(54)
 #    Time: 1700 ns  Iteration: 0  Instance: /sccomp_tb
 # Break in Module sccomp_tb at D:/CoDWork/SCPUSIM/sccomp_tb.v line 54
-quit -sim
-# End time: 15:16:29 on Mar 23,2019, Elapsed time: 0:02:35
-# Errors: 0, Warnings: 0

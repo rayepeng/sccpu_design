@@ -1,69 +1,78 @@
-D:/CoDWork/SCPUSIM/RF.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/RF.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+D:/CoDWork/SCPUSIM/sccpu.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/sccpu.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module sccpu
+
+Top level modules:
+	sccpu
+
+} {} {}} D:/CoDWork/SCPUSIM/RF.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/RF.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 -- Compiling module RF
 
 Top level modules:
 	RF
 
-} {} {}} D:/CoDWork/SCPUSIM/sccomp_tb.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/sccomp_tb.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+} {} {}} D:/CoDWork/SCPUSIM/sccomp_tb.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/sccomp_tb.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 -- Compiling module sccomp_tb
 
 Top level modules:
 	sccomp_tb
 
-} {} {}} D:/CoDWork/SCPUSIM/ctrl.v {0 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/ctrl.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+} {} {}} D:/CoDWork/SCPUSIM/ctrl.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/ctrl.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 -- Compiling module ctrl
-** Error: D:/CoDWork/SCPUSIM/ctrl.v(104): (vlog-2884) Bit-select into 'ALUOp' is out of bounds.
 
-} {4.0 5.0} {}} D:/CoDWork/SCPUSIM/sccomp.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/sccomp.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+Top level modules:
+	ctrl
+
+} {} {}} D:/CoDWork/SCPUSIM/sccomp.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/sccomp.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 -- Compiling module sccomp
 
 Top level modules:
 	sccomp
 
-} {} {}} D:/CoDWork/SCPUSIM/im.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/im.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+} {} {}} D:/CoDWork/SCPUSIM/im.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/im.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 -- Compiling module im
 
 Top level modules:
 	im
 
-} {} {}} D:/CoDWork/SCPUSIM/ctrl_encode_def.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/ctrl_encode_def.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+} {} {}} D:/CoDWork/SCPUSIM/ctrl_encode_def.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/ctrl_encode_def.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 
-} {} {}} D:/CoDWork/SCPUSIM/NPC.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/NPC.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module NPC
-
-Top level modules:
-	NPC
-
-} {} {}} D:/CoDWork/SCPUSIM/EXT.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/EXT.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module EXT
-
-Top level modules:
-	EXT
-
-} {} {}} D:/CoDWork/SCPUSIM/dm.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/dm.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+} {} {}} D:/CoDWork/SCPUSIM/dm.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/dm.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 -- Compiling module dm
 
 Top level modules:
 	dm
 
-} {} {}} D:/CoDWork/SCPUSIM/alu.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/alu.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+} {} {}} D:/CoDWork/SCPUSIM/NPC.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/NPC.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module NPC
+
+Top level modules:
+	NPC
+
+} {} {}} D:/CoDWork/SCPUSIM/EXT.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/EXT.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
+-- Compiling module EXT
+
+Top level modules:
+	EXT
+
+} {} {}} D:/CoDWork/SCPUSIM/alu.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/alu.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 -- Compiling module alu
 
 Top level modules:
 	alu
 
-} {} {}} D:/CoDWork/SCPUSIM/mux.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/mux.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+} {} {}} D:/CoDWork/SCPUSIM/mux.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/mux.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 -- Compiling module mux2
 -- Compiling module mux4
 -- Compiling module mux8
@@ -75,8 +84,8 @@ Top level modules:
 	mux8
 	mux16
 
-} {} {}} D:/CoDWork/SCPUSIM/PC.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/PC.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+} {} {}} D:/CoDWork/SCPUSIM/PC.v {1 {vlog -work work -vopt D:/CoDWork/SCPUSIM/PC.v
+Model Technology ModelSim SE vlog 10.1a Compiler 2012.02 Feb 22 2012
 -- Compiling module PC
 
 Top level modules:

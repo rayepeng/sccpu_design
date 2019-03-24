@@ -5,6 +5,7 @@
 #       Assembly                  Description           Instr   Address Machine
 main:   addi $2, $0, 5          # initialize $2 = 5     00      0       20020005
         addi $3, $0, 12         # initialize $3 = 12    01      4       2003000c
+        nor  $1, $2, $3
         addi $7, $3, -9         # initialize $7 = 3     02      8       2067fff7
         or   $4, $7, $2         # $4 = (3 or 5) = 7     03      c       00e22025
         and  $5, $3, $4         # $5 = (12 and 7) = 4   04      10      00642824

@@ -33,6 +33,7 @@ module ctrl(Op, Funct, Zero,
    wire i_subu = rtype& Funct[5]&~Funct[4]&~Funct[3]&~Funct[2]& Funct[1]& Funct[0]; // subu
    wire i_jr   = rtype&~Funct[5]&~Funct[4]& Funct[3]&~Funct[2]&~Funct[1]&~Funct[0]; //jr 001000
    wire i_jalr = rtype&~Funct[5]&~Funct[4]& Funct[3]&~Funct[2]&~Funct[1]& Funct[0]; //jalr 001001
+   wire i_nor  = rtype& Funct[5]&~Funct[4]&~Funct[3]& Funct[2]& Funct[1]& Funct[0]; //nor 100111
    
   // i format
    wire i_addi = ~Op[5]&~Op[4]& Op[3]&~Op[2]&~Op[1]&~Op[0]; // addi
@@ -79,9 +80,10 @@ module ctrl(Op, Funct, Zero,
   // ALU_OR    3'b100
   // ALU_SLT   3'b101
   // ALU_SLTU  3'b110
+  // ALU_NOR   3'b111
   
-  assign ALUOp[0] = i_add | i_lw | i_sw | i_addi | i_and | i_slt | i_addu;
-  assign ALUOp[1] = i_sub | i_beq | i_and | i_sltu | i_subu | i_bne;
-  assign ALUOp[2] = i_or | i_ori | i_slt | i_sltu;
+  assign ALUOp[0] = i_add | i_lw | i_sw | i_addi | i_and | i_slt | i_addu | i_nor;
+  assign ALUOp[1] = i_sub | i_beq | i_and | i_sltu | i_subu | i_bne | i_nor;
+  assign ALUOp[2] = i_or | i_ori | i_slt | i_sltu | i_nor;
 
 endmodule

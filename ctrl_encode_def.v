@@ -12,4 +12,5 @@
 `define ALU_OR    3'b100
 `define ALU_SLT   3'b101
 `define ALU_SLTU  3'b110
+`define ALU_NOR   3'b111
 

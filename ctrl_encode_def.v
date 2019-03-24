@@ -16,4 +16,6 @@
 `define ALU_SLL   4'b1000
 `define ALU_SRL   4'b1001
 `define ALU_SRA   4'b1010
+`define ALU_SLLV  4'b1011
+`define ALU_SRLV  4'b1100
 

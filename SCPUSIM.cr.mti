@@ -12,19 +12,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 2
 Top level modules:
 	RF
 
+} {} {}} D:/CoDWork/SCPUSIM/sccomp_tb.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/sccomp_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module sccomp_tb
+
+Top level modules:
+	sccomp_tb
+
 } {} {}} D:/CoDWork/SCPUSIM/sccomp.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/sccomp.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
 -- Compiling module sccomp
 
 Top level modules:
 	sccomp
-
-} {} {}} D:/CoDWork/SCPUSIM/ctrl.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/ctrl.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module ctrl
-
-Top level modules:
-	ctrl
 
 } {} {}} D:/CoDWork/SCPUSIM/im.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/im.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
@@ -36,19 +36,19 @@ Top level modules:
 } {} {}} D:/CoDWork/SCPUSIM/ctrl_encode_def.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/ctrl_encode_def.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
 
-} {} {}} D:/CoDWork/SCPUSIM/dm.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/dm.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module dm
-
-Top level modules:
-	dm
-
 } {} {}} D:/CoDWork/SCPUSIM/NPC.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/NPC.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
 -- Compiling module NPC
 
 Top level modules:
 	NPC
+
+} {} {}} D:/CoDWork/SCPUSIM/dm.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/dm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module dm
+
+Top level modules:
+	dm
 
 } {} {}} D:/CoDWork/SCPUSIM/EXT.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/EXT.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018

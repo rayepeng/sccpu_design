@@ -21,21 +21,21 @@ n@_opt1
 R2
 R0
 valu
-Z3 !s110 1553402206
+Z3 !s110 1553404680
 !i10b 1
-!s100 <L_RZRA:5:F6o:O^RTc613
-I8]`H9[<VEm@Dnn[Uc1EH72
+!s100 mmDJIofJ^8_nFfkX;g;Ue3
+IP0fWLOihi<RlCVMYS;zRn2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 Z5 dD:/CoDWork/SCPUSIM
-w1553401665
+w1553402853
 8D:/CoDWork/SCPUSIM/alu.v
 FD:/CoDWork/SCPUSIM/alu.v
-L0 3
+L0 14
 Z6 OV;L;10.6d;65
 r1
 !s85 0
 31
-Z7 !s108 1553402206.000000
+Z7 !s108 1553404680.000000
 !s107 ctrl_encode_def.v|D:/CoDWork/SCPUSIM/alu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CoDWork/SCPUSIM/alu.v|
 !i113 1
@@ -44,11 +44,11 @@ Z9 tCvgOpt 0
 vctrl
 R3
 !i10b 1
-!s100 c[cjW3DKZ64A<cBN03eVG2
-IDdE:e5cCj2DNBjefQK<eM3
+!s100 ID<[@S`RSFA:4WAnjMQLz0
+IGilAJX=6@<2JNnMQMcLc71
 R4
 R5
-w1553401874
+w1553404670
 8D:/CoDWork/SCPUSIM/ctrl.v
 FD:/CoDWork/SCPUSIM/ctrl.v
 L0 4
@@ -63,7 +63,7 @@ R7
 R8
 R9
 vdm
-Z10 !s110 1553402208
+!s110 1553404683
 !i10b 1
 !s100 9c4JAl_]h[d[U?>VPcOY]1
 Io4CARbQYSejU;kbd<iX;C1
@@ -77,7 +77,7 @@ R6
 r1
 !s85 0
 31
-Z11 !s108 1553402208.000000
+!s108 1553404683.000000
 !s107 D:/CoDWork/SCPUSIM/dm.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CoDWork/SCPUSIM/dm.v|
 !i113 1
@@ -106,7 +106,7 @@ R8
 R9
 n@e@x@t
 vim
-R10
+Z10 !s110 1553404684
 !i10b 1
 !s100 U;JIL?DAR;UKk>XKgK4W72
 I1z287V4<E27faQ0O=]Qg53
@@ -120,14 +120,14 @@ R6
 r1
 !s85 0
 31
-R11
+Z11 !s108 1553404684.000000
 !s107 D:/CoDWork/SCPUSIM/im.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CoDWork/SCPUSIM/im.v|
 !i113 1
 R8
 R9
 vmux16
-Z12 !s110 1553402207
+Z12 !s110 1553404681
 !i10b 1
 !s100 _kD]@DiV[:SJ[]_:lBKV[0
 I=6]FPb5iYRUemodn3j8=i2
@@ -141,14 +141,14 @@ R6
 r1
 !s85 0
 31
-R7
-Z16 !s107 D:/CoDWork/SCPUSIM/mux.v|
-Z17 !s90 -reportprogress|300|-work|work|-stats=none|D:/CoDWork/SCPUSIM/mux.v|
+Z16 !s108 1553404681.000000
+Z17 !s107 D:/CoDWork/SCPUSIM/mux.v|
+Z18 !s90 -reportprogress|300|-work|work|-stats=none|D:/CoDWork/SCPUSIM/mux.v|
 !i113 1
 R8
 R9
 vmux2
-R3
+R12
 !i10b 1
 !s100 QXC^TY7h[nMB8eh1LThKL1
 I`8TI_1?1_F[KC?:884K3d2
@@ -162,14 +162,14 @@ R6
 r1
 !s85 0
 31
-R7
 R16
 R17
+R18
 !i113 1
 R8
 R9
 vmux4
-R3
+R12
 !i10b 1
 !s100 3KQ[c;ZUY31^gKT9SAAk20
 I[ToZa0eIQlgzhn6>^aWA[2
@@ -183,9 +183,9 @@ R6
 r1
 !s85 0
 31
-R7
 R16
 R17
+R18
 !i113 1
 R8
 R9
@@ -204,9 +204,9 @@ R6
 r1
 !s85 0
 31
-R7
 R16
 R17
+R18
 !i113 1
 R8
 R9
@@ -225,7 +225,7 @@ R6
 r1
 !s85 0
 31
-Z18 !s108 1553402207.000000
+R16
 !s107 ctrl_encode_def.v|D:/CoDWork/SCPUSIM/NPC.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CoDWork/SCPUSIM/NPC.v|
 !i113 1
@@ -247,7 +247,7 @@ R6
 r1
 !s85 0
 31
-R18
+R16
 !s107 D:/CoDWork/SCPUSIM/PC.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CoDWork/SCPUSIM/PC.v|
 !i113 1
@@ -255,7 +255,7 @@ R8
 R9
 n@p@c
 vRF
-R12
+Z19 !s110 1553404682
 !i10b 1
 !s100 Q:0oI6KPM3Xi=@[XFTJ0_1
 IZ00EegNTYkG_MjhG3BIzz2
@@ -269,7 +269,7 @@ R6
 r1
 !s85 0
 31
-R18
+Z20 !s108 1553404682.000000
 !s107 D:/CoDWork/SCPUSIM/RF.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CoDWork/SCPUSIM/RF.v|
 !i113 1
@@ -298,13 +298,13 @@ R11
 R8
 R9
 vsccomp_tb
-!s110 1553402209
+R10
 !i10b 1
-!s100 @DG0:`B@A1EIT8399KcMC1
-I:hAZOO0:DY08D58S491PN0
+!s100 nP3DdjE<XGm2HC973e]J20
+IMcCh=VPKYXmePHc@9_h_91
 R4
 R5
-w1553402183
+w1553404149
 8D:/CoDWork/SCPUSIM/sccomp_tb.v
 FD:/CoDWork/SCPUSIM/sccomp_tb.v
 L0 3
@@ -312,20 +312,20 @@ R6
 r1
 !s85 0
 31
-!s108 1553402209.000000
+R11
 !s107 D:/CoDWork/SCPUSIM/sccomp_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CoDWork/SCPUSIM/sccomp_tb.v|
 !i113 1
 R8
 R9
 vsccpu
-R10
+R19
 !i10b 1
-!s100 T9oAJPP^iYnRjJlPk1FMf1
-IUJ>@Q?o0E`R00EcHnCW0A2
+!s100 hYkeOC@Oc4mY2hP6c>5UX0
+IiIcR9IaK8256PcK3;Ooom0
 R4
 R5
-w1553393974
+w1553404343
 8D:/CoDWork/SCPUSIM/sccpu.v
 FD:/CoDWork/SCPUSIM/sccpu.v
 L0 1
@@ -333,7 +333,7 @@ R6
 r1
 !s85 0
 31
-R11
+R20
 !s107 D:/CoDWork/SCPUSIM/sccpu.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/CoDWork/SCPUSIM/sccpu.v|
 !i113 1

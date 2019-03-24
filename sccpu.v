@@ -16,12 +16,13 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
    
    wire        RegWrite;    // control signal to register write
    wire        EXTOp;       // control signal to signed extension
-   wire [2:0]  ALUOp;       // ALU opertion
+   wire [3:0]  ALUOp;       // ALU opertion
    wire [1:0]  NPCOp;       // next PC operation
 
    wire [1:0]  WDSel;       // (register) write data selection
    wire [1:0]  GPRSel;      // general purpose register selection
-   wire        ALUSrc;      // ALU source for A
+   wire        ALUSrc;      // ALU source for B
+   wire        ARegSel;     // ALU sourec for A
    wire        Zero;        // ALU ouput zero
 
    wire [31:0] NPC;         // next PC
@@ -31,6 +32,7 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
    wire [4:0]  rd;          // rd
    wire [5:0]  Op;          // opcode
    wire [5:0]  Funct;       // funct
+   wire [31:0] shamt;
    wire [15:0] Imm16;       // 16-bit immediate
    wire [31:0] Imm32;       // 32-bit immediate
    wire [25:0] IMM;         // 26-bit immediate (address)
@@ -38,12 +40,14 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
    wire [31:0] WD;          // register write data
    wire [31:0] RD1;         // register data specified by rs
    wire [31:0] B;           // operator for ALU B
+   wire [31:0] A;
    
    assign Op = instr[31:26];  // instruction
    assign Funct = instr[5:0]; // funct
    assign rs = instr[25:21];  // rs
    assign rt = instr[20:16];  // rt
    assign rd = instr[15:11];  // rd
+   assign shamt = {27'b0, instr[10:6]};
    assign Imm16 = instr[15:0];// 16-bit immediate
    assign IMM = instr[25:0];  // 26-bit immediate
    
@@ -52,7 +56,7 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
       .Op(Op), .Funct(Funct), .Zero(Zero),
       .RegWrite(RegWrite), .MemWrite(MemWrite),
       .EXTOp(EXTOp), .ALUOp(ALUOp), .NPCOp(NPCOp), 
-      .ALUSrc(ALUSrc), .GPRSel(GPRSel), .WDSel(WDSel)
+      .ALUSrc(ALUSrc), .GPRSel(GPRSel), .WDSel(WDSel), .ARegSel(ARegSel)
    );
    
    // instantiation of PC
@@ -95,9 +99,13 @@ module sccpu( clk, rst, instr, readdata, PC, MemWrite, aluout, writedata, reg_se
       .d0(writedata), .d1(Imm32), .s(ALUSrc), .y(B)
    );   
    
+   mux2 #(32) U_MUX_ALU_A(
+	  .d0(RD1), .d1(shamt), .s(ARegSel), .y(A)
+   );
+   
    // instantiation of alu
    alu U_ALU ( 
-      .A(RD1), .B(B), .ALUOp(ALUOp), .C(aluout), .Zero(Zero)
+      .A(A), .B(B), .ALUOp(ALUOp), .C(aluout), .Zero(Zero)
    );
 
 endmodule

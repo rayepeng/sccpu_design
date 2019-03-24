@@ -13,7 +13,7 @@
 // `define ALU_SRA   4'b1010
 //`define ALU_SLLV  4'b1011
 //`define ALU_SRLV  4'b1100
-
+//`define ALU_SLL16 4'b1101
 module alu(A, B, ALUOp, C, Zero);
            
    input  signed [31:0] A, B;
@@ -39,7 +39,7 @@ module alu(A, B, ALUOp, C, Zero);
 		  `ALU_SRA:  C = B >>> A;                    //sra
 		  `ALU_SLLV: C = B << A;                     //sllv
 		  `ALU_SRLV: C = B >> A;                     //srlv
-		  
+		  `ALU_SLL16: C = B << 16;                   //lui
           default:   C = A;                          // Undefined
       endcase
    end // end always

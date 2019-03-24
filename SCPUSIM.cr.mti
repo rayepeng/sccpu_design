@@ -12,12 +12,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 2
 Top level modules:
 	RF
 
-} {} {}} D:/CoDWork/SCPUSIM/sccomp_tb.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/sccomp_tb.v
+} {} {}} D:/CoDWork/SCPUSIM/ctrl.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/ctrl.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module sccomp_tb
+-- Compiling module ctrl
 
 Top level modules:
-	sccomp_tb
+	ctrl
 
 } {} {}} D:/CoDWork/SCPUSIM/sccomp.v {1 {vlog -work work -stats=none D:/CoDWork/SCPUSIM/sccomp.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
